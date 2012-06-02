@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NewSite</title>
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<header class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<%= link_to "Aaron Neyer", root_path %>
+					<nav>
+					<ul class="nav pull-right">
+						<li>Thing one</li>
+						<li>Thing two</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+	</body>
+</html>
