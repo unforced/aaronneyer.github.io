@@ -1,0 +1,5 @@
+<div class="post well">
+<h2><%= post.title %></h2>
+<p><%= sanitize(truncate(RedCloth.new(post.content).to_html, length: 1000)) %></p>
+<p><%= link_to "Read more", post %></p>
+</div>
