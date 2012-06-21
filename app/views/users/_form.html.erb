@@ -13,5 +13,8 @@
 	<%= f.label :password_confirmation %><br />
 	<%= f.password_field :password_confirmation %><br />
 
+	<%= label_tag :secret_key %>
+	<%= password_field_tag :secret_key %><br />
+
 	<%= f.submit %>
 <% end %>

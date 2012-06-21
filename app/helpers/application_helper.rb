@@ -1,4 +1,6 @@
 module ApplicationHelper
+	include SessionsHelper
+
 	def full_title(provided=nil)
 		base_title = "Aaron Neyer"
 		if provided.blank?
@@ -7,5 +9,7 @@ module ApplicationHelper
 			return "#{base_title} | #{provided}"
 		end
 	end
+
+
 
 end

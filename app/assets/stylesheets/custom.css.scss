@@ -74,3 +74,11 @@ footer {
 .field_with_errors {
 	@extend .control-group.error;
 }
+
+/* posts */
+
+.post_title {
+	a {
+		color: #000;
+	}
+}

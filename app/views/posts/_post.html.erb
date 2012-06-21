@@ -1,5 +1,9 @@
 <div class="post well">
-<h2><%= post.title %></h2>
-<p><%= sanitize(truncate(RedCloth.new(post.content).to_html, length: 1000)) %></p>
-<p><%= link_to "Read more", post %></p>
+	<h2 class="post_title"><%= link_to post.title, post %></h2>
+	<% if signed_in? && current_user.is_admin? %>
+		<%= link_to "Edit", edit_post_path(post) %> | <%= link_to "Delete", post_path(post), method: :delete, confirm: "Are you sure?" %>
+	<% end %>
+	<p>By <%= post.user.name %> <em><%= time_ago_in_words(post.created_at) %> ago</em></p> 
+	<p><%= sanitize(truncate(RedCloth.new(post.content).to_html, length: 1000)) %></p>
+	<p><%= link_to "Read more", post %></p>
 </div>

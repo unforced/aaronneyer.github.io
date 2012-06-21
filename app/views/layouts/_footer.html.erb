@@ -1,12 +1,14 @@
 <footer class="footer">
 <small>
-	Site built using <%= link_to "Rails", "#" %> and  <%= link_to "Bootstrap.", "#" %>
+	Site built using <%= link_to "Rails", "http://rubyonrails.org" %> and  <%= link_to "Bootstrap.", "http://twitter.github.com/bootstrap/" %>
 </small>
 <nav>
 <ul>
-	<li><%= link_to "Thing one", "#" %></li>
-	<li><%= link_to "Thing two", "#" %></li>
-	<li><%= link_to "Thing three", "#" %></li>
+	<% if signed_in? %>
+		<li><%= link_to "#{current_user.name}: Sign Out", signout_path, method: 'delete' %></li>
+	<% else %>
+		<li><%= link_to "Sign in", signin_path %></li>
+	<% end %>
 </ul>
 </nav>
 </footer>
