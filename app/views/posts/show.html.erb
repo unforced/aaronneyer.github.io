@@ -2,7 +2,7 @@
 
 <h2><%= @post.title %></h2>
 <% if signed_in? && current_user.is_admin? %>
-	<%= link_to "Edit", post_path(@post.id) %> | <%= link_to "Delete", post_path(@post), method: :delete, confirm: "Are you sure?" %>
+	<%= link_to "Edit", edit_post_path(@post.id) %> | <%= link_to "Delete", post_path(@post), method: :delete, confirm: "Are you sure?" %>
 <% end %>
 
 <p><%= @post.user.name %><br />
