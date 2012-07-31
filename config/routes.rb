@@ -1,5 +1,12 @@
 NewSite::Application.routes.draw do
-  resources :posts
+	resources :posts do
+		collection do
+			get 'home'
+			get 'projects'
+			get 'blog'
+		end
+	end
+
 
 	resources :users
 	resources :sessions

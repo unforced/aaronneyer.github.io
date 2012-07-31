@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  attr_accessible :content, :title, :photo
+  attr_accessible :content, :title, :photo, :post_type
 	has_attached_file :photo
 
   belongs_to :user
@@ -7,6 +7,8 @@ class Post < ActiveRecord::Base
   validates :user_id, presence: true
   validates :content, presence: true
   validates :title, presence: true
+
+	TYPES = ['Blog', 'Home', 'Projects']
 
 	def to_param
 		"#{id} #{title}".parameterize
