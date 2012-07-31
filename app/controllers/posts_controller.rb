@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 	# GET /posts
 	# GET /posts.json
 	def index
-		@posts = Post.paginate(page: params[:page], per_page: 5)
+		@posts = Post.where(:post_type => "Blog").paginate(page: params[:page], per_page: 5)
 
 		respond_to do |format|
 			format.html
@@ -14,8 +14,8 @@ class PostsController < ApplicationController
 		end
 	end
 
-	def blog
-		@posts = Post.where(:post_type => "Blog").paginate(page: params[:page], per_page: 5)
+	def all
+		@posts = Post.paginate(page: params[:page], per_page: 5)
 
 		respond_to do |format|
 			format.html { render :index }
