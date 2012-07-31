@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120727025734) do
+ActiveRecord::Schema.define(:version => 20120731015035) do
 
   create_table "posts", :force => true do |t|
     t.text     "content",            :limit => 255
@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(:version => 20120727025734) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.boolean  "is_home"
+    t.boolean  "is_blog"
+    t.boolean  "is_project"
   end
 
   add_index "posts", ["user_id", "created_at"], :name => "index_posts_on_user_id_and_created_at"
