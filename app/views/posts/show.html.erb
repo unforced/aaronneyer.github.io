@@ -8,4 +8,4 @@
 <p><%= @post.user.name %><br />
 <em><%= @post.created_at.in_time_zone.to_formatted_s(:long) %></em></p>
 <%= image_tag @post.photo.url %>
-<%= sanitize(RedCloth.new(@post.content).to_html) %>
+<%= raw(@post.content) %>

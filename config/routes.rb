@@ -4,7 +4,7 @@ NewSite::Application.routes.draw do
 	resources :users
 	resources :sessions
 
-	root to: 'static_pages#home'
+	root to: 'posts#home'
 	match '/signup', to: 'users#new'
 	match '/signin', to: 'sessions#new'
 	match '/signout', to: 'sessions#destroy', via: :delete

@@ -6,11 +6,38 @@ class PostsController < ApplicationController
 	# GET /posts
 	# GET /posts.json
 	def index
-		@posts = Post.paginate(page: params[:page], per_page: 5)
+		@posts = Post.where(:is_blog => true).paginate(page: params[:page], per_page: 5)
 
 		respond_to do |format|
 			format.html # index.html.erb
 			format.json { render json: @posts }
+		end
+	end
+
+	def all
+		@posts = Post.paginate(page: params[:page], per_page: 5)
+
+		respond_to do |format|
+			format.html
+			format.json { render json: @posts }
+		end
+	end
+
+	def home
+		@post = Post.where(:is_home => true).first
+
+		respond_to do |format|
+			format.html
+			format.json { render json: @post }
+		end
+	end
+
+	def projects
+		@post = Post.where(:is_project => true).first
+		
+		respond_to do |format|
+			format.html
+			format.json { render json: @post }
 		end
 	end
 
