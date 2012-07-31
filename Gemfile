@@ -7,6 +7,7 @@ gem 'will_paginate'
 gem 'RedCloth'
 gem 'lorem'
 gem 'bootstrap-will_paginate'
+gem 'paperclip'
 
 
 # Bundle edge Rails instead:

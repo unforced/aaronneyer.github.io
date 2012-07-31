@@ -31,7 +31,7 @@ body {
 
 footer {
 	margin-top: 45px;
-	padding-top: 5px;
+	padding: 5px;
 	border-top: 1px solid $grayMediumLight;
 	color: $grayLight;
 	a {
@@ -41,7 +41,15 @@ footer {
 		}
 	}
 	small {
+		position: absolute;
 		float: left;
+	}
+	.center {
+		float: left;
+		position: absolute;
+		width: 30%;
+		margin-left: 35%;
+		margin-right: 35%;
 	}
 	ul {
 		float: right;

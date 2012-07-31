@@ -2,19 +2,21 @@
 	<%= render 'shared/error_messages', object: f.object %>
 
 	<%= f.label :name %>
-	<%= f.text_field :name %>
+	<%= f.text_field :name %><br />
 
-	<%= f.label :email %><br />
-	<%= f.text_field :email %>
+	<%= f.label :email %>
+	<%= f.text_field :email %><br />
 
-	<%= f.label :password %><br />
+	<%= f.label :password %>
 	<%= f.password_field :password %><br />
 
-	<%= f.label :password_confirmation %><br />
+	<%= f.label :password_confirmation %>
 	<%= f.password_field :password_confirmation %><br />
 
-	<%= label_tag :secret_key %>
-	<%= password_field_tag :secret_key %><br />
+	<% if signed_in? && User.current_user.is_admin? %>
+		<%= f.label :role_id %>
+		<%= f.select :role_id, Role.all.collect{|r| [r.name,r.id]} %><br />
+	<% end %>
 
 	<%= f.submit %>
 <% end %>

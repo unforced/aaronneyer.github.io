@@ -1,11 +1,11 @@
 <% Time.zone = "EST" %>
 
 <h2><%= @post.title %></h2>
-<% if signed_in? && current_user.is_admin? %>
+<% if signed_in? && User.current_user.is_admin? %>
 	<%= link_to "Edit", edit_post_path(@post.id) %> | <%= link_to "Delete", post_path(@post), method: :delete, confirm: "Are you sure?" %>
 <% end %>
 
 <p><%= @post.user.name %><br />
 <em><%= @post.created_at.in_time_zone.to_formatted_s(:long) %></em></p>
-
+<%= image_tag @post.photo.url %>
 <%= sanitize(RedCloth.new(@post.content).to_html) %>

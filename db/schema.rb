@@ -11,15 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120619015507) do
+ActiveRecord::Schema.define(:version => 20120727025734) do
 
   create_table "posts", :force => true do |t|
-    t.text     "content",    :limit => 255
+    t.text     "content",            :limit => 255
     t.integer  "user_id"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
     t.string   "title"
     t.string   "photo"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   add_index "posts", ["user_id", "created_at"], :name => "index_posts_on_user_id_and_created_at"
@@ -28,7 +32,6 @@ ActiveRecord::Schema.define(:version => 20120619015507) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "secret_key"
   end
 
   create_table "users", :force => true do |t|

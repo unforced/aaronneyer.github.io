@@ -46,7 +46,7 @@ class UsersController < ApplicationController
 	# POST /users.json
 	def create
 		@user = User.new(params[:user])
-		@user.role = Role.find_by_secret_key(params[:secret_key]) || Role.normal_user
+		@user.role_id ||= 3
 
 		respond_to do |format|
 			if @user.save
@@ -64,9 +64,6 @@ class UsersController < ApplicationController
 	# PUT /users/1.json
 	def update
 		@user = User.find(params[:id])
-		unless params[:secret_key].blank?
-			@user.role = Role.find_by_secret_key(params[:secret_key]) || Role.normal_user
-		end
 
 		respond_to do |format|
 			if @user.update_attributes(params[:user])
