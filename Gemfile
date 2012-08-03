@@ -9,7 +9,6 @@ gem 'lorem'
 gem 'bootstrap-will_paginate'
 gem 'paperclip'
 
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

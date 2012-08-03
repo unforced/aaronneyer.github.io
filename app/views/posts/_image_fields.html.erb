@@ -1,0 +1,11 @@
+<fieldset>
+	<% o = f.object %>
+	<% if o.new_record? %>
+		<%= f.file_field :photo %>
+	<% else %>
+		<%= link_to(o.photo_file_name, o.photo.url) %>
+	<% end %>
+
+	<%= f.hidden_field :_destroy %>
+	<%= link_to raw("<i class='icon-remove'></i>"), "#", :class => "remove_fields" %><br />
+</fieldset>

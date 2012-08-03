@@ -1,7 +1,9 @@
 class Post < ActiveRecord::Base
-  attr_accessible :content, :title, :photo, :post_type
 
   belongs_to :user
+	has_many :images, :dependent => :destroy, :conditions => {:model_type => "Post"}, :foreign_key => :model_id
+
+	accepts_nested_attributes_for :images, :reject_if => lambda{|i| i['photo'].nil?}, :allow_destroy => true
   
   validates :user_id, presence: true
   validates :content, presence: true

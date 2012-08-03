@@ -18,3 +18,5 @@
 *.swp
 *~
 
+#Ignore uploaded images
+/public/system/*
