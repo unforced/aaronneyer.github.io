@@ -14,16 +14,12 @@
 ActiveRecord::Schema.define(:version => 20120731030929) do
 
   create_table "posts", :force => true do |t|
-    t.text     "content",            :limit => 255
+    t.text     "content",    :limit => 255
     t.integer  "user_id"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.string   "title"
     t.string   "photo"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
     t.string   "post_type"
   end
 

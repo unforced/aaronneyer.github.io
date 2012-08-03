@@ -1,6 +1,5 @@
 class Post < ActiveRecord::Base
   attr_accessible :content, :title, :photo, :post_type
-	has_attached_file :photo
 
   belongs_to :user
   
