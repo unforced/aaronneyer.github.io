@@ -8,6 +8,7 @@ gem 'RedCloth'
 gem 'lorem'
 gem 'bootstrap-will_paginate'
 gem 'paperclip'
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
