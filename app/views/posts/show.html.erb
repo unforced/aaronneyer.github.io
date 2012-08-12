@@ -7,4 +7,10 @@
 
 <p><%= @post.user.name %><br />
 <em><%= @post.created_at.in_time_zone.to_formatted_s(:long) %></em></p>
-<%= raw(@post.content) %>
+<div id='post_content'>
+	<%= @post.content.html_safe %>
+</div>
+
+<div id='disqus_thread' class='comments'>
+	<%= disqus_thread.html_safe %>
+</div>
