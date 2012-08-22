@@ -3,7 +3,7 @@
 	<% if signed_in? && User.current_user.is_admin? %>
 		<%= link_to "Edit", edit_post_path(post) %> | <%= link_to "Delete", post_path(post), method: :delete, confirm: "Are you sure?" %>
 	<% end %>
-	<p>By <%= post.user.name %> <em><%= time_ago_in_words(post.created_at) %> ago</em></p> 
+	<p>Posted by <%= post.user.name %>, <em><%= time_ago_in_words(post.created_at) %> ago</em></p> 
 	<p><%= raw(post.content) %></p>
 	<p><%= link_to "Read more", post %></p>
 </div>

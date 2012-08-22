@@ -10,12 +10,13 @@ gem 'bootstrap-will_paginate'
 gem 'paperclip'
 gem 'newrelic_rpm'
 gem 'disqus'
+gem 'yaml_db'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'mysql'
 
-gem 'sqlite3'
-
+group :production do
+	gem 'google-analytics-rails'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,9 +30,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
