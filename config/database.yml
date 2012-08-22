@@ -1,7 +1,7 @@
 development:
-  adapter: mysql
+  adapter: mysql2
   encoding: utf8
-  reconnect: false
+  reconnect: true
   database: rails_dev
   pool: 5
   username: <%= APP_CONFIG['database_username'] %>
@@ -10,9 +10,9 @@ development:
   host: <%= APP_CONFIG['database_host'] %>
 
 test:
-  adapter: mysql
+  adapter: mysql2
   encoding: utf8
-  reconnect: false
+  reconnect: true
   database: rails_test
   pool: 5
   username: <%= APP_CONFIG['database_username'] %>
@@ -21,9 +21,9 @@ test:
   host: <%= APP_CONFIG['database_host'] %>
 
 production:
-  adapter: mysql
+  adapter: mysql2
   encoding: utf8
-  reconnect: false
+  reconnect: true
   database: rails_prod
   pool: 5
   username: <%= APP_CONFIG['database_username'] %>

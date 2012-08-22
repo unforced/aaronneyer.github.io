@@ -12,7 +12,7 @@ gem 'newrelic_rpm'
 gem 'disqus'
 gem 'yaml_db'
 
-gem 'mysql'
+gem 'mysql2'
 
 group :production do
 	gem 'google-analytics-rails'
