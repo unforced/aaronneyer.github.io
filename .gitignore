@@ -26,3 +26,5 @@
 
 #Ignore db data dumps
 /db/data.yml
+
+.sass-cache
