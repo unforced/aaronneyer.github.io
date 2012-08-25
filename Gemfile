@@ -8,7 +8,6 @@ gem 'RedCloth'
 gem 'lorem'
 gem 'bootstrap-will_paginate'
 gem 'paperclip'
-gem 'newrelic_rpm'
 gem 'disqus'
 gem 'yaml_db'
 

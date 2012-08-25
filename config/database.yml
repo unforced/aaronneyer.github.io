@@ -1,32 +1,23 @@
 development:
   adapter: mysql2
-  encoding: utf8
   reconnect: true
   database: rails_dev
-  pool: 5
   username: <%= APP_CONFIG['database_username'] %>
   password: <%= APP_CONFIG['database_password'] %>
-  socket : /var/run/mysqld/mysqld.sock
   host: <%= APP_CONFIG['database_host'] %>
 
 test:
   adapter: mysql2
-  encoding: utf8
   reconnect: true
   database: rails_test
-  pool: 5
   username: <%= APP_CONFIG['database_username'] %>
   password: <%= APP_CONFIG['database_password'] %>
-  socket : /var/run/mysqld/mysqld.sock
   host: <%= APP_CONFIG['database_host'] %>
 
 production:
   adapter: mysql2
-  encoding: utf8
   reconnect: true
   database: rails_prod
-  pool: 5
   username: <%= APP_CONFIG['database_username'] %>
   password: <%= APP_CONFIG['database_password'] %>
-  socket : /var/run/mysqld/mysqld.sock
   host: <%= APP_CONFIG['database_host'] %>
