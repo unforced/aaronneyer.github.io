@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title page.title
+    %title Aaron Neyer | {{page.title}}
     == {% stylesheet app %}
     == {% javascript app %}
   %body
@@ -17,17 +17,22 @@
                 %a{href: "/blog.html"} Blog
               %li
                 %a{href: "/projects.html"} Projects
-      .container-fluid
-        .row-fluid
-          .span10
-            .well== {{ content }}
-          .span2
-            .well
-              %h3 Links
-              %nav
-                %a{href: "http://github.com/Aaronneyer"} Github
-                %a{href: "/resume.pdf"} Resume
-                %a{href: "/id_rsa.pub"} Public Key
-                %a{href: "mailto:aaron@aaronneyer.com"} Email
-                %a{href: "https://plus.google.com/105911866099025277294"} Google+
-                %a{href: "https://www.facebook.com/aaron.neyer"} Facebook
+    .container-fluid
+      .row-fluid
+        .span10
+          .well== {{ content }}
+        .span2
+          .well
+            %h3 Links
+            %nav
+              %a{href: "http://github.com/Aaronneyer"} Github
+              %br
+              %a{href: "/resume.pdf"} Resume
+              %br
+              %a{href: "/id_rsa.pub"} Public Key
+              %br
+              %a{href: "mailto:aaron@aaronneyer.com"} Email
+              %br
+              %a{href: "https://plus.google.com/105911866099025277294"} Google+
+              %br
+              %a{href: "https://www.facebook.com/aaron.neyer"} Facebook
