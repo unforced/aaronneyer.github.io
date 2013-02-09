@@ -1,7 +1,9 @@
 pygments: true
 markdown: rdiscount
 exclude: Gemfile*, Rakefile
-#assets:
-#  compress:
-#    css: sass
-#    js: uglifier
+source: .
+destination: ../_site
+assets:
+  compress:
+    css: sass
+    js: uglifier

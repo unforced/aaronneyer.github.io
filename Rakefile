@@ -12,7 +12,7 @@ task :haml do
 end
 
 task :clean do
-  system "rm -rf _site"
+  system "rm -rf ../_site/*"
 end
 
 task :preview => [:haml, :clean] do
