@@ -1,7 +1,0 @@
-pygments: true
-markdown: rdiscount
-exclude: Gemfile*, Rakefile
-#assets:
-#  compress:
-#    css: sass
-#    js: uglifier
