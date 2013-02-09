@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>page.title</title>
+    {% stylesheet app %}
+    {% javascript app %}
+  </head>
+  <body>
+    <header class='navbar'>
+      <div class='navbar-inner my-header'>
+        <div class='container-fluid'>
+          <a class='brand' href='/'>Aaron Neyer</a>
+          <nav>
+            <ul class='nav'>
+              <li>
+                <a href='/'>Home</a>
+              </li>
+              <li>
+                <a href='/blog.html'>Blog</a>
+              </li>
+              <li>
+                <a href='/projects.html'>Projects</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class='container-fluid'>
+        <div class='row-fluid'>
+          <div class='span10'>
+            {{ content }}
+          </div>
+          <div class='span2'>
+            <div class='well'>
+              <h3>Links</h3>
+              <nav>
+                <a href='http://github.com/Aaronneyer'>Github</a>
+                <a href='/resume.pdf'>Resume</a>
+                <a href='/id_rsa.pub'>Public Key</a>
+                <a href='mailto:aaron@aaronneyer.com'>Email</a>
+                <a href='https://plus.google.com/105911866099025277294'>Google+</a>
+                <a href='https://www.facebook.com/aaron.neyer'>Facebook</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

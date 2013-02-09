@@ -1,0 +1,14 @@
+---
+layout: default
+title: blog
+---
+
+#blog
+  %h1 My Blog
+  == {% for post in site.posts %}
+  .post.well
+    %h2.post_title
+      %a{href: "{{post.href}}"}
+        == {{post.title}}
+        %p== {{post.date | date_to_string}}
+  == {% endfor %}

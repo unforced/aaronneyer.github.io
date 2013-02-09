@@ -1,8 +1,0 @@
-<h1>Aaron's Blog</h1>
-<% if signed_in? && User.current_user.is_editor? %>
-	<%= link_to "New Post", new_post_path %>
-<% end %>
-<br />
-<%= render @posts %>
-<%= will_paginate %>
-
