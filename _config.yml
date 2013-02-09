@@ -2,7 +2,7 @@ pygments: true
 markdown: rdiscount
 exclude: Gemfile*, Rakefile
 source: .
-destination: ../_site
+destination: ../master
 assets:
   compress:
     css: sass
