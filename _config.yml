@@ -1,6 +1,6 @@
 pygments: true
 markdown: rdiscount
-exclude: Gemfile*, Rakefile
+exclude: [Gemfile*, Rakefile]
 source: .
 destination: ../master
 assets:

@@ -16,9 +16,9 @@ task :clean do
 end
 
 task :preview => [:haml, :clean] do
-  system "jekyll --auto --server"
+  system "jekyll serve --watch"
 end
 
 task :build => [:haml, :clean] do
-  system "jekyll"
+  system "jekyll build"
 end
