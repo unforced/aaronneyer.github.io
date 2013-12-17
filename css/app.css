@@ -1,0 +1,19 @@
+html {
+  overflow-y: scroll; 
+}
+
+.center {
+  text-align: center; 
+}
+
+.center h1 {
+  margin-bottom: 10px; 
+}
+
+.post_title a {
+  color: #000;
+}
+
+.comments {
+  margin-top: 40px;
+}

@@ -1,9 +1,4 @@
 pygments: true
-markdown: rdiscount
-exclude: [Gemfile*, Rakefile]
 source: .
-destination: ../master
-assets:
-  compress:
-    css: sass
-    js: uglifier
+destination: _build
+timezone: America/New_York

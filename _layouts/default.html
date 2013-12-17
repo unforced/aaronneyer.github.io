@@ -2,23 +2,27 @@
 <html>
   <head>
     <title>Aaron Neyer | {{page.title}}</title>
-    {% stylesheet app %}
-    {% javascript app %}
+    <script src="/js/jquery.js"> </script>
+    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/bootstrap-theme.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/app.css" type="text/css" media="all" />
   </head>
   <body>
-    <header class='navbar'>
-      <div class='navbar-inner my-header'>
-        <div class='container-fluid'>
-          <a class='brand' href='/'>Aaron Neyer</a>
+    <nav class='navbar navbar-default'>
+      <div class='navbar-header'>
+        <div class='container'>
+          <a class='navbar-brand' href='/'>Aaron Neyer</a>
         </div>
       </div>
-    </header>
-    <div class='container-fluid'>
-      <div class='row-fluid'>
-        <div class='span10'>
+    </nav>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-10'>
           <div class='well'>{{ content }}</div>
         </div>
-        <div class='span2'>
+        <div class='col-md-2'>
           <div class='well'>
             <h3>Links</h3>
             <nav>
