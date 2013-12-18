@@ -11,36 +11,43 @@
   </head>
   <body>
     <nav class='navbar navbar-default'>
+      <div class='container'>
       <div class='navbar-header'>
-        <div class='container'>
-          <a class='navbar-brand' href='/'>Aaron Neyer</a>
-        </div>
+        <a class='navbar-brand' href='/'>Aaron Neyer</a>
+      </div>
+      <div class='navbar-collapse collapse' id='navbar-main'>
+        <ul class='nav navbar-nav'>
+          <li class='dropdown'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#' id='links'>
+              Links
+              <span class='caret'></span>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='http://github.com/Aaronneyer'>Github</a>
+              </li>
+              <li>
+                <a href='/resume.pdf'>Resume</a>
+              </li>
+              <li>
+                <a href='/id_rsa.pub'>Public Key</a>
+              </li>
+              <li>
+                <a href='mailto:aaron@aaronneyer.com'>Email</a>
+              </li>
+              <li>
+                <a href='https://plus.google.com/105911866099025277294'>Google+</a>
+              </li>
+              <li>
+                <a href='https://www.facebook.com/aaron.neyer'>Facebook</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
     <div class='container'>
-      <div class='row'>
-        <div class='col-md-10'>
-          <div class='well'>{{ content }}</div>
-        </div>
-        <div class='col-md-2'>
-          <div class='well'>
-            <h3>Links</h3>
-            <nav>
-              <a href='http://github.com/Aaronneyer'>Github</a>
-              <br>
-              <a href='/resume.pdf'>Resume</a>
-              <br>
-              <a href='/id_rsa.pub'>Public Key</a>
-              <br>
-              <a href='mailto:aaron@aaronneyer.com'>Email</a>
-              <br>
-              <a href='https://plus.google.com/105911866099025277294'>Google+</a>
-              <br>
-              <a href='https://www.facebook.com/aaron.neyer'>Facebook</a>
-            </nav>
-          </div>
-        </div>
-      </div>
+      {{ content }}
     </div>
   </body>
 </html>
