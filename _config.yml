@@ -1,4 +1,4 @@
-pygments: true
+highlighter: pygments
 source: .
 destination: _build
 timezone: America/New_York
