@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/aaronneyer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://neyer.io
+  * I am aaronneyer (https://keybase.io/aaronneyer) on keybase.
+  * I have a public key with fingerprint B44F D277 0334 D4D4 4567  58EB A272 4BBC 7DD8 B9F0
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "b44fd2770334d4d4456758eba2724bbc7dd8b9f0",
+            "host": "keybase.io",
+            "key_id": "a2724bbc7dd8b9f0",
+            "uid": "7166557fde47104d53c625e202605400",
+            "username": "aaronneyer"
+        },
+        "service": {
+            "hostname": "neyer.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412951475,
+    "expire_in": 157680000,
+    "prev": "9bf9fe5c81c4c0096ac9e799dc4b46e3e4f092509fab9615af1ba43dd37d74fe",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.3
+Comment: https://keybase.io/crypto
+
+yMHjAnicbVFbSBRRGN4trdyKNGSDxJcjEcpWczkzs7OEtaaE9WBikLlL21zOrNO2
+M9vs7KrIgr5UBGXWi5pBadHFCrqIJVJidjHRoCyyEG2hoLwkUkgm1sxmb53zcDjf
+/13+n7939VKLzdqi7e6KvXswbe3v/hax7GUm71YDXhWrgKsaBFDikWTFj7SQJis6
+cAEeQkkkGAYjSSgaF1I0QzkRzxEMAXleYETRybMSBhygXA2bCsOG58Jos6wamPHx
+yaKB/ocfSRQYnKYpipFEBBkcgyJFCjRBIQIjaIyCWIIYRprCBZFpw2mqoqAqpIGY
+Axh4VBaQ2bUZvshJlP/GhzRVVwX1sIGW63rIZYr0qpDJqkC8b1Hv42VFNKY2BFGk
+hWVVAS7cYAq6bBriECdYCocM5QCoMiRryCebDIqhnZhxzBgUNSxZXmIlRAlOXIAC
+hrE0J7CIYVlRgDykEYmghLEEhbESx7M0TnESznOQFEWSERkoIWBOdERRgctptMn5
+Dcuw7Fc4PaIhEOvp9iZZrDbLsuQl5t4stpTUf9s82bvCUhM/UHSjo+ZQxYc6zJM8
+N372S1pSRlvQs0kqVb7aF/rH6+eGhzydqW320TOzl7EdC1zBr+Gb7lVlo/Gx/Kza
+jMKi9mfnrn5eCOQNbmuoLc48MfSw41Zzf6Dvydb8Uxd3OckBb9HYxpnnjdPXJ+7E
+td/lkX3ZOXsKWzxqUnykr2maaM55kxmcJz/Z044D9/aV3331TSO3T2cFS1+vsXeu
+S80drJyva0fcz77WeJfNUXCs5+PE2/mWe7AhUHx0arkzPZqOXC+z9IOv9rdqT39c
+qiwZ2DKDBgob15e1zt53W7Pd3g3eF5kpXTt7px6lg7bJC1fGYnm5Odfi78+LJY/X
+/gH4NRvQ
+=QWcQ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aaronneyer
+
+==================================================================
