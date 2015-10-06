@@ -3,3 +3,4 @@ source: .
 destination: _build
 timezone: America/New_York
 markdown: kramdown
+gems: ["jemoji"]
